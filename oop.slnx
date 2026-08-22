@@ -1,3 +1,8 @@
 <Solution>
-  <Project Path="oop/oop.csproj" Id="78daec3f-3ff4-482c-9df3-583cd5d17784" />
+  <Folder Name="/buoi2/">
+    <Project Path="oop/oop.csproj" Id="78daec3f-3ff4-482c-9df3-583cd5d17784" />
+  </Folder>
+  <Folder Name="/buoi3/">
+    <Project Path="ConsoleApp1/ConsoleApp1.csproj" Id="79660c30-3d61-46a0-b68d-658ed8a6486d" />
+  </Folder>
 </Solution>
