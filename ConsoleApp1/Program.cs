@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1
+namespace DAY 3
 {
     internal class Program
     {
@@ -15,7 +15,7 @@ namespace ConsoleApp1
             private decimal _balance;
 
             // TODO 1: AccountId (Init-Only)
-            public string AccountId { init; }
+            public string AccountId { get; set; }
             // TODO 2: Username (Auto-Implemented)
             public string Username { get; set; }
             // TODO 3: Password (Write-Only)
@@ -84,7 +84,7 @@ namespace ConsoleApp1
 
             // 2. Test Write-Only Property
             // Attempting to read Password should fail compilation!
-            //Console.WriteLine(user.Password); //UNCOMMENT TO VERIFY COMPILER ERROR
+            Console.WriteLine(user.Password); //UNCOMMENT TO VERIFY COMPILER ERROR
 
             // 3. Test Full Property Validation
             Console.WriteLine("\n--- Testing Balance Updates ---");
