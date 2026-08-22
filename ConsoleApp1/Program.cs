@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DAY 3
+namespace ConsoleApp1
 {
     internal class Program
     {
@@ -63,7 +63,7 @@ namespace DAY 3
             }
         }
 
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             // --- TEST HARNESS ---
 
