@@ -15,7 +15,7 @@ namespace ConsoleApp1
             private decimal _balance;
 
             // TODO 1: AccountId (Init-Only)
-            public string AccountId { get; set; }
+            public string AccountId { init; }
             // TODO 2: Username (Auto-Implemented)
             public string Username { get; set; }
             // TODO 3: Password (Write-Only)
