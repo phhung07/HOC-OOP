@@ -26,7 +26,7 @@ namespace ConsoleApp1
                     _password = "[ENCRYPTED]_" + value;
                 }
             }
-            
+
             // TODO 4: Balance (Full Property with Validation)
             public decimal Balance
             {
@@ -58,12 +58,12 @@ namespace ConsoleApp1
             public UserAccount()
             {
                 // TODO: Initialize CreatedDate here
-             
+
                 this.CreatedDate = DateTime.Now;
             }
         }
 
-        static void Main1(string[] args)
+        static void Main(string[] args)
         {
             // --- TEST HARNESS ---
 
@@ -102,6 +102,5 @@ namespace ConsoleApp1
             Console.WriteLine($"Is VIP now? {user.IsVIP}"); // Should be true ($15000 >= $10000)
 
         }
-
     }
 }
