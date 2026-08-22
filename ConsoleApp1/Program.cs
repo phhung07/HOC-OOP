@@ -15,7 +15,7 @@ namespace ConsoleApp1
             private decimal _balance;
 
             // TODO 1: AccountId (Init-Only)
-            public string AccountId { get; set; }
+            public string AccountId { init; }
             // TODO 2: Username (Auto-Implemented)
             public string Username { get; set; }
             // TODO 3: Password (Write-Only)
@@ -76,7 +76,7 @@ namespace ConsoleApp1
             };
 
             // Attempting to modify AccountId after creation should fail compilation!
-            user.AccountId = "ACC-00000"; // UNCOMMENT TO VERIFY COMPILER ERROR
+            //user.AccountId = "ACC-00000"; // UNCOMMENT TO VERIFY COMPILER ERROR
 
             Console.WriteLine($"Account ID: {user.AccountId}");
             Console.WriteLine($"Username: {user.Username}");
@@ -84,7 +84,7 @@ namespace ConsoleApp1
 
             // 2. Test Write-Only Property
             // Attempting to read Password should fail compilation!
-            Console.WriteLine(user.Password); //UNCOMMENT TO VERIFY COMPILER ERROR
+            //Console.WriteLine(user.Password); //UNCOMMENT TO VERIFY COMPILER ERROR
 
             // 3. Test Full Property Validation
             Console.WriteLine("\n--- Testing Balance Updates ---");
