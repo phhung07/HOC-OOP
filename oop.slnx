@@ -5,4 +5,7 @@
   <Folder Name="/buoi3/">
     <Project Path="ConsoleApp1/ConsoleApp1.csproj" Id="79660c30-3d61-46a0-b68d-658ed8a6486d" />
   </Folder>
+  <Folder Name="/exercise3/">
+    <Project Path="exercise 3/exercise 3.csproj" Id="11bfcc44-fb8e-4ab4-b2f4-a5a0a4e3370d" />
+  </Folder>
 </Solution>
