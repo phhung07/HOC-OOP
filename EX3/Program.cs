@@ -6,8 +6,6 @@ using System.Threading.Tasks;
 
 namespace EX3
 {
-    using System;
-
     public class BankAccount
     {
         // TODO 1: Private fields
