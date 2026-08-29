@@ -1,9 +1,9 @@
 <Solution>
   <Folder Name="/buoi2/">
-    <Project Path="oop/oop.csproj" Id="78daec3f-3ff4-482c-9df3-583cd5d17784" />
+    <Project Path="oop/buoi2.csproj" Id="78daec3f-3ff4-482c-9df3-583cd5d17784" />
   </Folder>
   <Folder Name="/buoi3/">
-    <Project Path="ConsoleApp1/ConsoleApp1.csproj" Id="79660c30-3d61-46a0-b68d-658ed8a6486d" />
+    <Project Path="ConsoleApp1/buoi3.csproj" Id="79660c30-3d61-46a0-b68d-658ed8a6486d" />
   </Folder>
   <Folder Name="/buoi4/">
     <Project Path="buoi4/buoithu4/buoithu4.csproj" Id="aa992af0-81d5-41a8-9181-482c70bf3e75" />
