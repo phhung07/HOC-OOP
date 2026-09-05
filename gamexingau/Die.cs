@@ -2,7 +2,7 @@
 
 namespace buoithu4
 {
-    internal class Die
+    public class Die
     {
         //data fields
         private byte face;
@@ -52,5 +52,17 @@ namespace buoithu4
             return s;
         }
 
+    }
+
+
+
+    class Test
+    {
+        /* public static void Main(string[] args)
+         {
+             Console.OutputEncoding = Encoding.UTF8;
+             Die d = new Die();
+             Console.WriteLine(d);
+         }*/
     }
 }

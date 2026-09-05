@@ -10,6 +10,7 @@ namespace buoi5
     {
         static void Main(string[] args)
         {
+
         }
     }
 }

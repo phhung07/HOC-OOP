@@ -11,5 +11,8 @@
   <Folder Name="/exercise3/">
     <Project Path="exercise 3/exercise 3.csproj" Id="11bfcc44-fb8e-4ab4-b2f4-a5a0a4e3370d" />
   </Folder>
+  <Folder Name="/GAMEDICE/">
+    <Project Path="gamexingau/gamexingau.csproj" Id="cd2d0a2c-7897-4ac7-8acf-aede096c33e8" />
+  </Folder>
   <Project Path="buoi5/buoi5.csproj" Id="3485133b-7b3e-4491-915d-4392e99d5516" />
 </Solution>
