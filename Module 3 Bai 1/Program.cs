@@ -71,33 +71,43 @@ namespace Module_3_Bai_1
     {
         static void Main(string[] args)
         {
-            ChuyenXeNoiThanh[] noiThanh = new ChuyenXeNoiThanh[2];
-            noiThanh[0] = new ChuyenXeNoiThanh(
+            ChuyenXe[] danhSach = new ChuyenXe[4];
+
+            danhSach[0] = new ChuyenXeNoiThanh(
                 "NT01", "Nguyen Van A", "59A-12345",
                 5, 100, 500000);
-            noiThanh[1] = new ChuyenXeNoiThanh(
+
+            danhSach[1] = new ChuyenXeNoiThanh(
                 "NT02", "Nguyen Van B", "59B-67890",
                 8, 150, 700000);
-            ChuyenXeNgoaiThanh[] ngoaiThanh = new ChuyenXeNgoaiThanh[2];
-            ngoaiThanh[0] = new ChuyenXeNgoaiThanh(
+
+            danhSach[2] = new ChuyenXeNgoaiThanh(
                 "NT03", "Nguyen Van C", "59C-11111",
                 "Da Lat", 3, 2000000);
-            ngoaiThanh[1] = new ChuyenXeNgoaiThanh(
+
+            danhSach[3] = new ChuyenXeNgoaiThanh(
                 "NT04", "Nguyen Van D", "59D-22222",
                 "Vung Tau", 2, 1500000);
+
             double tongNoiThanh = 0;
             double tongNgoaiThanh = 0;
-            foreach (ChuyenXeNoiThanh xe in noiThanh)
+
+            foreach (ChuyenXe xe in danhSach)
             {
-                tongNoiThanh += xe.TinhDoanhThu();
+                if (xe is ChuyenXeNoiThanh)
+                {
+                    tongNoiThanh += xe.TinhDoanhThu();
+                }
+                else if (xe is ChuyenXeNgoaiThanh)
+                {
+                    tongNgoaiThanh += xe.TinhDoanhThu();
+                }
             }
-            foreach (ChuyenXeNgoaiThanh xe in ngoaiThanh)
-            {
-                tongNgoaiThanh += xe.TinhDoanhThu();
-            }
+            double tongTatCa = tongNoiThanh + tongNgoaiThanh;
             Console.WriteLine("Tong doanh thu noi thanh: " + tongNoiThanh);
             Console.WriteLine("Tong doanh thu ngoai thanh: " + tongNgoaiThanh);
-            Console.WriteLine("Tong doanh thu tat ca: " + (tongNoiThanh + tongNgoaiThanh));
+            Console.WriteLine("Tong doanh thu tat ca: " + tongTatCa);
+            Console.ReadLine();
         }
     }
 }
