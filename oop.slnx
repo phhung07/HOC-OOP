@@ -17,6 +17,7 @@
   <Folder Name="/Module3/">
     <Project Path="Module 3 Bai 1/Module 3 Bai 1.csproj" Id="cd0b8514-2253-47b5-9ed6-03d3375b6994" />
     <Project Path="Module 3 Bai 2/Module 3 Bai 2.csproj" Id="993a0d21-6e83-41c0-bf45-0933541d58ca" />
+    <Project Path="Module 3 Bai 3/Module 3 Bai 3.csproj" Id="80a26f6e-c326-4a50-8dae-6610fad8cf6c" />
   </Folder>
   <Project Path="buoi5/buoi5.csproj" Id="3485133b-7b3e-4491-915d-4392e99d5516" />
 </Solution>
