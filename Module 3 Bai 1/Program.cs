@@ -12,8 +12,7 @@ namespace Module_3_Bai_1
         protected string hoTenTaiXe;
         protected string soXe;
         protected double doanhThu;
-        public ChuyenXe(string maSoChuyen, string hoTenTaiXe,
-                        string soXe, double doanhThu)
+        public ChuyenXe(string maSoChuyen, string hoTenTaiXe,string soXe, double doanhThu)
         {
             this.maSoChuyen = maSoChuyen;
             this.hoTenTaiXe = hoTenTaiXe;
@@ -29,14 +28,8 @@ namespace Module_3_Bai_1
     {
         private int soTuyen;
         private double soKm;
-        public ChuyenXeNoiThanh(
-            string maSoChuyen,
-            string hoTenTaiXe,
-            string soXe,
-            int soTuyen,
-            double soKm,
-            double doanhThu)
-            : base(maSoChuyen, hoTenTaiXe, soXe, doanhThu)
+        public ChuyenXeNoiThanh(string maSoChuyen,string hoTenTaiXe,string soXe,int soTuyen,double soKm,double doanhThu)
+        : base(maSoChuyen, hoTenTaiXe, soXe, doanhThu)
         {
             this.soTuyen = soTuyen;
             this.soKm = soKm;
@@ -50,14 +43,8 @@ namespace Module_3_Bai_1
     {
         private string noiDen;
         private int soNgay;
-        public ChuyenXeNgoaiThanh(
-            string maSoChuyen,
-            string hoTenTaiXe,
-            string soXe,
-            string noiDen,
-            int soNgay,
-            double doanhThu)
-            : base(maSoChuyen, hoTenTaiXe, soXe, doanhThu)
+        public ChuyenXeNgoaiThanh(string maSoChuyen,string hoTenTaiXe,string soXe,string noiDen,int soNgay,double doanhThu)
+        : base(maSoChuyen, hoTenTaiXe, soXe, doanhThu)
         {
             this.noiDen = noiDen;
             this.soNgay = soNgay;
@@ -73,25 +60,12 @@ namespace Module_3_Bai_1
         {
             ChuyenXe[] danhSach = new ChuyenXe[4];
 
-            danhSach[0] = new ChuyenXeNoiThanh(
-                "NT01", "Nguyen Van A", "59A-12345",
-                5, 100, 500000);
-
-            danhSach[1] = new ChuyenXeNoiThanh(
-                "NT02", "Nguyen Van B", "59B-67890",
-                8, 150, 700000);
-
-            danhSach[2] = new ChuyenXeNgoaiThanh(
-                "NT03", "Nguyen Van C", "59C-11111",
-                "Da Lat", 3, 2000000);
-
-            danhSach[3] = new ChuyenXeNgoaiThanh(
-                "NT04", "Nguyen Van D", "59D-22222",
-                "Vung Tau", 2, 1500000);
-
+            danhSach[0] = new ChuyenXeNoiThanh("NT01", "Nguyen Van A", "59A-12345",5, 100, 500000);
+            danhSach[1] = new ChuyenXeNoiThanh("NT02", "Nguyen Van B", "59B-67890",8, 150, 700000);
+            danhSach[2] = new ChuyenXeNgoaiThanh("NT03", "Nguyen Van C", "59C-11111","Da Lat", 3, 2000000);
+            danhSach[3] = new ChuyenXeNgoaiThanh("NT04", "Nguyen Van D", "59D-22222","Vung Tau", 2, 1500000);
             double tongNoiThanh = 0;
             double tongNgoaiThanh = 0;
-
             foreach (ChuyenXe xe in danhSach)
             {
                 if (xe is ChuyenXeNoiThanh)

@@ -13,9 +13,7 @@ namespace Module_3_Bai_2
         protected double donGia;
         protected int soLuong;
         protected string nhaXuatBan;
-        public Sach(string maSach, DateTime ngayNhap,
-                    double donGia, int soLuong,
-                    string nhaXuatBan)
+        public Sach(string maSach, DateTime ngayNhap,double donGia, int soLuong,string nhaXuatBan)
         {
             this.maSach = maSach;
             this.ngayNhap = ngayNhap;
@@ -40,14 +38,8 @@ namespace Module_3_Bai_2
     public class SachGiaoKhoa : Sach
     {
         private string tinhTrang;
-        public SachGiaoKhoa(
-            string maSach,
-            DateTime ngayNhap,
-            double donGia,
-            int soLuong,
-            string nhaXuatBan,
-            string tinhTrang)
-            : base(maSach, ngayNhap, donGia, soLuong, nhaXuatBan)
+        public SachGiaoKhoa(string maSach,DateTime ngayNhap,double donGia,int soLuong,string nhaXuatBan,string tinhTrang)
+        : base(maSach, ngayNhap, donGia, soLuong, nhaXuatBan)
         {
             this.tinhTrang = tinhTrang;
         }
@@ -70,14 +62,8 @@ namespace Module_3_Bai_2
     public class SachThamKhao : Sach
     {
         private double thue;
-        public SachThamKhao(
-            string maSach,
-            DateTime ngayNhap,
-            double donGia,
-            int soLuong,
-            string nhaXuatBan,
-            double thue)
-            : base(maSach, ngayNhap, donGia, soLuong, nhaXuatBan)
+        public SachThamKhao(string maSach,DateTime ngayNhap,double donGia,int soLuong,string nhaXuatBan,double thue)
+        : base(maSach, ngayNhap, donGia, soLuong, nhaXuatBan)
         {
             this.thue = thue;
         }
@@ -121,8 +107,7 @@ namespace Module_3_Bai_2
             Console.WriteLine("\nSach giao khoa cua NXB " + K + ":");
             foreach (Sach sach in danhSach)
             {
-                if (sach is SachGiaoKhoa &&
-                    sach.NhaXuatBan.Equals(K, StringComparison.OrdinalIgnoreCase))
+                if (sach is SachGiaoKhoa && sach.NhaXuatBan.Equals(K, StringComparison.OrdinalIgnoreCase))
                 {
                     Console.WriteLine(sach);
                 }
@@ -141,4 +126,3 @@ namespace Module_3_Bai_2
         }
     }
 }
-

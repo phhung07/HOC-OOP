@@ -12,8 +12,7 @@ namespace Module_3_Bai_3
         protected DateTime ngayGiaoDich;
         protected double donGia;
         protected int soLuong;
-        public GiaoDich(string maGiaoDich, DateTime ngayGiaoDich,
-                        double donGia, int soLuong)
+        public GiaoDich(string maGiaoDich, DateTime ngayGiaoDich,double donGia, int soLuong)
         {
             this.maGiaoDich = maGiaoDich;
             this.ngayGiaoDich = ngayGiaoDich;
@@ -31,23 +30,14 @@ namespace Module_3_Bai_3
         }
         public override string ToString()
         {
-            return "Ma giao dich: " + maGiaoDich +
-                   ", Ngay giao dich: " + ngayGiaoDich.ToShortDateString() +
-                   ", Don gia: " + donGia +
-                   ", So luong: " + soLuong +
-                   ", Thanh tien: " + ThanhTien();
+            return "Ma giao dich: " + maGiaoDich +", Ngay giao dich: " + ngayGiaoDich.ToShortDateString() +", Don gia: " + donGia +", So luong: " + soLuong +", Thanh tien: " + ThanhTien();
         }
     }
     public class GiaoDichVang : GiaoDich
     {
         private string loaiVang;
-        public GiaoDichVang(
-            string maGiaoDich,
-            DateTime ngayGiaoDich,
-            double donGia,
-            int soLuong,
-            string loaiVang)
-            : base(maGiaoDich, ngayGiaoDich, donGia, soLuong)
+        public GiaoDichVang(string maGiaoDich,DateTime ngayGiaoDich,double donGia,int soLuong,string loaiVang)
+        : base(maGiaoDich, ngayGiaoDich, donGia, soLuong)
         {
             this.loaiVang = loaiVang;
         }
@@ -65,22 +55,15 @@ namespace Module_3_Bai_3
     {
         private double tiGia;
         private string loaiTienTe;
-        public GiaoDichTienTe(
-            string maGiaoDich,
-            DateTime ngayGiaoDich,
-            double donGia,
-            int soLuong,
-            double tiGia,
-            string loaiTienTe)
-            : base(maGiaoDich, ngayGiaoDich, donGia, soLuong)
+        public GiaoDichTienTe(string maGiaoDich,DateTime ngayGiaoDich,double donGia,int soLuong,double tiGia,string loaiTienTe)
+        : base(maGiaoDich, ngayGiaoDich, donGia, soLuong)
         {
             this.tiGia = tiGia;
             this.loaiTienTe = loaiTienTe;
         }
         public override double ThanhTien()
         {
-            if (loaiTienTe.ToLower() == "usd" ||
-                loaiTienTe.ToLower() == "euro")
+            if (loaiTienTe.ToLower() == "usd" || loaiTienTe.ToLower() == "euro")
             {
                 return soLuong * donGia * tiGia;
             }
@@ -91,9 +74,7 @@ namespace Module_3_Bai_3
         }
         public override string ToString()
         {
-            return base.ToString() +
-                   ", Ti gia: " + tiGia +
-                   ", Loai tien te: " + loaiTienTe;
+            return base.ToString() +", Ti gia: " + tiGia +", Loai tien te: " + loaiTienTe;
         }
     }
     class Program
